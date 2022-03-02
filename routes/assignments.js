@@ -34,7 +34,7 @@ function postAssignment(req, res){
 
     assignment.save( (err) => {
         if(err){
-            res.send('cant post assignment ', err);
+            res.send('impossible de faire le post ', err);
         }
         res.json({ message: `${assignment.nom} ajouté avec succès par la back-end!`})
     })
